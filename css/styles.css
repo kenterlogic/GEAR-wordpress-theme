@@ -1,0 +1,94 @@
+
+
+body {
+	font-family: abril-text;'
+	font-weight:400;
+	font-size:14px;
+	line-height:20px;
+	background:#f0f0f0;
+	color:#3D1C00;
+	margin:0 auto;
+}
+
+iframe {margin-bottom:1em;}
+strong {font-weight:600;color:#666;}
+p {font-family: abril-text;margin-bottom:20px;}
+a {text-decoration:none;}
+
+#subcontainer, #headline {
+	margin-bottom:40px;
+	padding-bottom:40px;
+	border-bottom:3px double #ccc;
+	float:left;
+}
+
+/* headings /////////////////////// */
+
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom:0.5em;
+	display:block;
+}
+h2 {
+  font-family: ff-meta-web-pro;
+  line-height:1.1em;
+  letter-spacing:-0.05em;
+  font-size:18px;
+  font-weight:700;
+  width:100%;
+  font-style:italic;
+}
+	h2 a {
+		color:#000;
+	}
+
+h3 {
+  font-family: ff-meta-web-pro;
+	font-size:12px;
+	padding:.1em .5em;
+	border-radius:4px;
+	text-align:center;
+	margin:0 0 .5em .5em;
+	float:right;
+	background:#F0D8A8;
+	border:1px solid #E6C988;
+}
+
+h4 {
+	font-family: ff-meta-web-pro;
+	font-size:10px;
+	text-transform:uppercase;
+	margin-bottom:10px;
+	background:#FA2A00;
+	color:#fff;
+	line-height:18px;
+	padding:0.1em .5em 0;
+	text-align:center;
+	margin-right:50%;
+	width:auto;
+}
+
+
+/* global classes /////////////////////// */
+#headline {font-size:130%;line-height:150%;}
+	#headline img {width:100%;margin-bottom:20px;}
+	#headline h2 {font-size:200%;}
+.post {}
+	.post div img {width:210px;height:auto;margin:-10px 0 10px;}
+	.post h2 {}
+.video {}
+	.video iframe {margin:0 0 10px;}
+.quote {}
+	.quote p {;margin-right:20px;font-style:italic;}
+.link {}
+.single {}
+.sidebar {}
+.footer {}
+.clear {clear:both;width:960px;float:left;border-bottom:9px solid #f00;}
+@media only screen and (max-width: 960px) {
+	
+body {
+	font-size:13px;
+	line-height:18px;
+}
+	
+}
