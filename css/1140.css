@@ -5,30 +5,38 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 body {text-align:center;margin:auto;}
 
 .container {
-width:960px;
-margin:20px auto;
+width:1140px;
 text-align:left;
+margin:20px auto;
 }
+.floatfix {width:1140px;float:left;position:relative;}
 
-#subcontainer {width:960px;float:left;}
+.mainContent {width:760px;float:left;}
+#feed {}	
+	#feed .post {
+		width:220px;
+		margin:0 15px 20px;
+		float:left;
+		}
+		#feed .post img {width:220px;margin-top:-10px;margin-bottom:10px;height:auto;}
+		#feed .post h4 {margin-bottom:10px;}
 
-.onecol,.twocol,.threecol,.fourcol,.fivecol,.sixcol,.sevencol,.eightcol,.ninecol,.tencol,.elevencol,.twelvecol {
-	margin:15px;
-	float:left;
-	display:inline;
+#stash {
+	float:right;
+	width:320px;
+	background:#eee;
+	padding:20px;
+	color:#222;
+	border:1px solid #ddd;
+	text-shadow:0 1px 0 #fff;
 }
-.onecol {width:70px;}
-.twocol {width:130px;}
-.threecol {width:210px;}
-.fourcol {width:290px;}
-.fivecol {width:370px;}
-.sixcol {width:450px;}
-.sevencol {width:530px;}
-.eightcol {width:610px;}
-.ninecol {width:690px;}
-.tencol {width:770px;}
-.elevencol {width:850px;}
-.twelvecol {width:930px;}
+	#stash ul {margin:20px 0 0 0;}
+
+#nav {
+	margin:15px 0 30px 15px;
+	border-bottom:3px double #ccc;
+	padding:15px 0;
+}
 
 
 
@@ -38,8 +46,6 @@ text-align:left;
 @media only screen and (max-width: 1000px) {
 
 	body {
-	font-size: 0.8em;
-	line-height: 1.5em;
 	}
 	
 
@@ -52,27 +58,11 @@ text-align:left;
 
 @media handheld, only screen and (max-width: 767px) {
 
-	body {
-	font-size: 16px;
-	-webkit-text-size-adjust: none;
-	}
-	
-	.row, body, .container {
-	width: 100%;
-	min-width: 0;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	}
-	
-	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
-	width: auto;
-	float: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	}
+	.container {padding:10px;width:auto;}
+	.floatfix {margin:0;border:none;width:100%;}
+	.mainContent {width: 100%;}
+	#feed .post {width:100%;}
+	#feed .post img {width:100%;height:auto;}
+	#stash {width:auto;}
 
 }

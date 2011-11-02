@@ -1,26 +1,20 @@
 
 
 body {
-	font-family: abril-text;'
+	font-family: 'abril-text';
 	font-weight:400;
-	font-size:14px;
-	line-height:20px;
-	background:#f0f0f0;
+	font-size:13px;
+	line-height:18px;
+	background:#fff;
 	color:#3D1C00;
 	margin:0 auto;
 }
 
 iframe {margin-bottom:1em;}
-strong {font-weight:600;color:#666;}
-p {font-family: abril-text;margin-bottom:20px;}
+strong {color:#666;}
+p {;margin-bottom:20px;}
 a {text-decoration:none;}
 
-#subcontainer, #headline {
-	margin-bottom:40px;
-	padding-bottom:40px;
-	border-bottom:3px double #ccc;
-	float:left;
-}
 
 /* headings /////////////////////// */
 
@@ -35,7 +29,6 @@ h2 {
   font-size:18px;
   font-weight:700;
   width:100%;
-  font-style:italic;
 }
 	h2 a {
 		color:#000;
@@ -69,21 +62,21 @@ h4 {
 
 
 /* global classes /////////////////////// */
-#headline {font-size:130%;line-height:150%;}
-	#headline img {width:100%;margin-bottom:20px;}
-	#headline h2 {font-size:200%;}
 .post {}
-	.post div img {width:210px;height:auto;margin:-10px 0 10px;}
-	.post h2 {}
+	li.post {
+		list-style:none;
+		float:left;width:320px;padding:5px 20px;margin:0 -20px;border-bottom:1px solid #ddd;}
+	li.post img {float:left;margin-right:10px;display:inline;}
+	li.post h2 {font-size:15px;font-weight:normal;display:inline;line-height:20px;margin-bottom:0;}
+	li.post h3 {float:none;display:inline;margin:0 0 10px 0;}
 .video {}
-	.video iframe {margin:0 0 10px;}
 .quote {}
-	.quote p {;margin-right:20px;font-style:italic;}
 .link {}
 .single {}
 .sidebar {}
 .footer {}
-.clear {clear:both;width:960px;float:left;border-bottom:9px solid #f00;}
+
+
 @media only screen and (max-width: 960px) {
 	
 body {

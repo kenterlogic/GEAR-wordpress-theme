@@ -3,7 +3,7 @@
 <html>
 <?php wp_head();?>
 <head>
-	<!--[if lt IE 9]>
+<!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -20,4 +20,11 @@
 <title>Gears of Change : Global Economic Accountability Research, a youth media project</title>
 </head>
 
-	
+	<body>
+<div class="container">
+<div class="floatfix">
+	<div id="nav">	
+		<h1>Gears of Change</h1>
+	</div>
+</div>
+</div>
