@@ -21,10 +21,3 @@
 </head>
 
 	<body>
-<div class="container">
-<div class="floatfix">
-	<div id="nav">	
-		<h1>Gears of Change</h1>
-	</div>
-</div>
-</div>

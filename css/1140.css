@@ -18,8 +18,33 @@ margin:20px auto;
 		margin:0 15px 20px;
 		float:left;
 		}
-		#feed .post img {width:220px;margin-top:-10px;margin-bottom:10px;height:auto;}
+		#feed .post img {width:220px;margin-top:-30px;margin-bottom:10px;height:auto;z-index:1;}
 		#feed .post h4 {margin-bottom:10px;}
+		#feed .post h5 {z-index:2;}
+#single {}
+	#single .post img {width:600px;height:auto;}
+	#single .post {
+		width:600px;
+		margin:0 15px 20px;
+		float:left;
+		font-size:130%;
+		line-height:140%;
+		position:relative;
+		}
+	#single .post h2 {
+		width:70%;
+		margin-top:20px;
+		font-size:300%;
+		color:#f30;
+		}
+	#single .post h4 {
+		position:absolute;
+		top:10px;
+		right:10px;
+		float:right;
+		margin:0;
+	}
+	
 
 #stash {
 	float:right;

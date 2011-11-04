@@ -1,3 +1,7 @@
+<div id="colophon">
+	<h1>Colophon</h1>
+	<p>GEAR is a youth led media project dedicated to shining a light on global institutions' abuse of financial tools to influece and profit from climate degredation.</p>
+</div>
 <div id="kickstarter">
 	<h1>Donate now</h1>
 	<iframe frameborder="0" height="275px" src="http://www.kickstarter.com/projects/888557521/gears-of-change-a-youth-climate-change-media-proje/widget/video.html" width="300px"></iframe>

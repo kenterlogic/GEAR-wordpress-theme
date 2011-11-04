@@ -4,7 +4,7 @@ add_theme_support( 'post-formats', array( 'aside', 'gallery', 'video', 'audio', 
 
 if ( function_exists( 'add_theme_support' ) ) { 
   add_theme_support( 'post-thumbnails' ); 
-  add_image_size ( 'large', '540', 'true');
+  add_image_size ( 'large', '720', 'true');
   add_image_size ( 'thumb', '120', '75', 'false');
 }
 function add_javascript() {

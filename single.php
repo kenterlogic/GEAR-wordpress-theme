@@ -1,29 +1,13 @@
 <?php get_header(); ?>
-<div class="container">
-<div class="floatfix">
-	<div id="nav">	
-		<img id="logo" src="<?php bloginfo('template_url'); ?>/img/gearbox-2.png" alt="Gears of Change" />
-		<?php query_posts(); ?>
-		<?php if ( have_posts() ) : ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<div class="topStory">				
-			<?php if(has_post_thumbnail()) { the_post_thumbnail('large'); } ?>
-			<h3><?php the_time('M j'); ?></h3>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<?php the_excerpt('more'); ?>
-			</div>
-		<?php endwhile; ?>
-		<?php else : ?>			
-		<?php endif; ?>
-	</div>
-</div>
-</div>
+	
+	
+
 
 <div class="container">
 <div class="floatfix">
 
-<div id="feed" class="mainContent">	
-<?php query_posts('showposts=20&offset=1'); ?>
+<div id="single" class="mainContent">	
+
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<div class="post">
@@ -31,34 +15,35 @@
 <?php if (has_post_format( 'video' )) { ?>
 <!-- video post loop ========================================================= -->
 		<div class="video">
-    		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    		<h2><?php the_title(); ?></h2>
     		<h3><?php the_time('M j'); ?></h3>
-    		<?php the_excerpt('more'); ?>                
+    		<?php the_content('more'); ?>                
 <!-- quote post loop ========================================================= -->
 <?php } elseif (has_post_format( 'quote' )) { ?>
     	<div class="link">
-			<?php if(has_post_thumbnail()) { the_post_thumbnail('medium'); } ?>
-    		<h3><?php the_time('M j'); ?></h3>
-    		<?php the_excerpt('more'); ?>
+			<?php if(has_post_thumbnail()) { the_post_thumbnail('large'); } ?>
+			<h2><?php the_title(); ?></h2>
+    		<h3><?php the_time('M j'); ?></h3>  		
+    		<?php the_content('more'); ?>
    			<p class="attribution">&mdash; <?php echo get_post_meta($post->ID, 'quoted', true) ?></p>                    
 <!-- link post loop ========================================================= -->
 <?php } elseif (has_post_format( 'link' )) { ?>
         <div class="quote">
-        	<a href="<?php echo get_post_meta($post->ID,'link-url', true) ?>" > 		
-			<?php if(has_post_thumbnail()) { the_post_thumbnail('medium'); } ?>
-            <h2><?php the_title(); ?></h2></a>
+			<?php if(has_post_thumbnail()) { the_post_thumbnail('large'); } ?>
+            <h2><?php the_title(); ?></h2>
             <h3><?php the_time('M j'); ?></h3>
-			<?php the_excerpt(); ?>
+			<?php the_content(); ?>
             <p class="attribution">&mdash; <?php echo get_post_meta($post->ID, 'link-author', true) ?></p>                  
 <!-- normal post loop ========================================================= -->
 <?php } else { ?>
 		<div class="standard">
-			<?php if(has_post_thumbnail()) { the_post_thumbnail('medium'); } ?>
+			<?php if(has_post_thumbnail()) { the_post_thumbnail('large'); } ?>
 			<h3><?php the_time('M j'); ?></h3>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<?php the_excerpt('more'); ?>
+			<h2><?php the_title(); ?></h2>
+			<?php the_content('more'); ?>
 <?php } ?>	
-<!-- everything has this too =================================================== -->      		
+<!-- everything has this too =================================================== -->    
+			<h5><?php the_author(); ?>  			
 		</div>
 	</div>
 <?php endwhile; ?>
